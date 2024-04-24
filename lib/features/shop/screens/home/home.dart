@@ -32,7 +32,7 @@ class HomeScreen extends StatelessWidget {
                   const SizedBox(height: TSizes.spaceBtwSections),
 
                   /// --- SearchBar ---
-                  const TSearchContainer(text: 'Search in Store'),
+                  const TSearchContainer(text: 'Search Something'),
                   const SizedBox(height: TSizes.spaceBtwSections),
 
                   ///Categories sections
@@ -41,7 +41,7 @@ class HomeScreen extends StatelessWidget {
                     child: Column(
                       children: [
                         TSectionHeading(
-                            title: 'Popular categories',
+                            title: 'Popular things in University',
                             showActionButton: false,
                             textColor: Colors.white),
                         const SizedBox(height: TSizes.spaceBtwItems),

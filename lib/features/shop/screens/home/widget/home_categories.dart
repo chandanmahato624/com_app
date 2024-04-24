@@ -20,8 +20,8 @@ class THomeCategories extends StatelessWidget {
           itemCount: 6,
           itemBuilder: (_, index) {
             return TVerticalImageText(
-              image: TImages.shoeIcon,
-              title: 'Shoes',
+              image: TImages.jeweleryIcon,
+              title: 'Department.',
               onTap: () => Get.to(() => const SubcategoriesScreen()),
             );
           }),
