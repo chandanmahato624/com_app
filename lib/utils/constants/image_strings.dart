@@ -231,11 +231,11 @@ class TImages {
       "assets/images/reviews/review_profile_image_3.jpeg";
 
   //Banners
-  static const String promoBanner1 = "assets/images/banners/banner_1.jpg";
+  static const String promoBanner1 = "assets/images/banners/nbu-cst.png";
   static const String promoBanner2 = "assets/images/banners/banner_2.jpg";
   static const String promoBanner3 = "assets/images/banners/banner_3.jpg";
   static const String promoBanner4 = "assets/images/banners/banner_4.jpg";
-  static const String banner1 = "assets/images/banners/banner_1.jpg";
+  static const String banner1 = "assets/images/banners/nbu-cst.png";
   static const String banner2 = "assets/images/banners/banner_2.jpg";
   static const String banner3 = "assets/images/banners/banner_3.jpg";
   static const String banner4 = "assets/images/banners/banner_4.jpg";

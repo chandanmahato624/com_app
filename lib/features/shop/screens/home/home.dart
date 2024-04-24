@@ -1,5 +1,8 @@
 // ignore_for_file: unnecessary_const
 
+import 'package:com_app/common/widgets/list_tiles/settings_menu_tile.dart';
+import 'package:com_app/features/personalization/screens/address/address.dart';
+import 'package:com_app/features/shop/screens/order/order.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get_core/src/get_main.dart';
 import 'package:get/get_navigation/get_navigation.dart';
@@ -14,6 +17,7 @@ import 'package:com_app/features/shop/screens/home/widget/home_categories.dart';
 import 'package:com_app/features/shop/screens/home/widget/promo_slider.dart';
 import 'package:com_app/utils/constants/image_strings.dart';
 import 'package:com_app/utils/constants/sizes.dart';
+import 'package:iconsax/iconsax.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -41,7 +45,7 @@ class HomeScreen extends StatelessWidget {
                     child: Column(
                       children: [
                         TSectionHeading(
-                            title: 'Popular things in University',
+                            title: 'Popular things to explore!',
                             showActionButton: false,
                             textColor: Colors.white),
                         const SizedBox(height: TSizes.spaceBtwItems),
@@ -71,15 +75,45 @@ class HomeScreen extends StatelessWidget {
                   const SizedBox(height: TSizes.spaceBtwSections),
 
                   TSectionHeading(
-                    title: 'Popular Products',
+                    title: 'Popular Complain',
                     onPressed: () => Get.to(() => const AllProducts()),
                   ),
                   const SizedBox(height: TSizes.spaceBtwItems),
 
-                  /// Populer products ---
-                  TRridLayout(
-                      itemCount: 2,
-                      itemBuilder: (_, index) => const TProductCardVertical()),
+                  /// Populer complain categories ---
+                  const TSettingsMenuTile(
+                    icon: Iconsax.electricity,
+                    title: 'Electricity',
+                    subTitle:
+                        'Click here for Fan, light, etc releted compalin. ',
+                    //onTap: () {},
+                  ),
+                  const TSettingsMenuTile(
+                    icon: Iconsax.pen_tool,
+                    title: 'Carpenter',
+                    subTitle: 'For door, Bed, chair, window releted comaplain',
+
+                    ///onTap: () => Get.to(() => const UserAddressScreen()),
+                  ),
+                  const TSettingsMenuTile(
+                    icon: Iconsax.simcard_2,
+                    title: 'Window Glass',
+                    subTitle: 'Only if window broken.',
+
+                    ///onTap: () => Get.to(const OrderScreen()),
+                  ),
+                  const TSettingsMenuTile(
+                    icon: Iconsax.blur,
+                    title: 'Plumbing',
+                    subTitle: 'Any type of water releted complain',
+                    //onTap: () {},
+                  ),
+                  const TSettingsMenuTile(
+                    icon: Iconsax.square,
+                    title: 'others',
+                    subTitle: 'For others complain only',
+                    //onTap: () {},
+                  ),
 
                   /// Popular product ---
                 ],
