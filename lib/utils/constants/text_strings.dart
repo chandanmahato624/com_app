@@ -9,16 +9,16 @@ class TTexts {
   static const String tContinue = "Continue";
 
   // -- OnBoarding Texts
-  static const String onBoardingTitle1 = "Choose your product";
-  static const String onBoardingTitle2 = "Select Payment Method";
-  static const String onBoardingTitle3 = "Deliver at your door step";
+  static const String onBoardingTitle1 = "Effortlessly Report complaint";
+  static const String onBoardingTitle2 = "Streamlined Complaint Registration";
+  static const String onBoardingTitle3 = "Swift Solutions at Your Fingertips";
 
   static const String onBoardingSubTitle1 =
-      "Welcome to a World of Limitless Choices - Your Perfect Product Awaits!";
+      "Experience hassle-free complaint registration for all your hostel concerns , from electrical problems to repaits.Let's get started!";
   static const String onBoardingSubTitle2 =
-      "For Seamless Transactions, Choose Your Payment Path - Your Convenience, Our Priority!";
+      "Quickly report and track issues in your hostel with our user-friendly complaint registration system.";
   static const String onBoardingSubTitle3 =
-      "From Our Doorstep to Yours - Swift, Secure, and Contactless Delivery!";
+      "Get started today and enjoy a hassle-free hostel life . Your comfort is our priority!";
 
   // -- Authentication Forms
   static const String firstName = "First Name";
@@ -44,7 +44,7 @@ class TTexts {
   // -- Authentication Headings
   static const String loginTitle = "Welcome back,";
   static const String loginSubTitle =
-      "Discover Limitless Choices and Unmatched Convenience.";
+      "Log in and take control of your hostel living exprience.";
   static const String signupTitle = "Let’s create your account";
   static const String forgetPasswordTitle = "Forget password";
   static const String forgetPasswordSubTitle =
