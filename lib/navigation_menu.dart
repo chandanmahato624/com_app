@@ -1,3 +1,7 @@
+import 'package:com_app/features/personalization/screens/activity/activity.dart';
+import 'package:com_app/features/personalization/screens/complain/complain.dart';
+import 'package:com_app/features/personalization/screens/profile/widgets/profile.dart';
+import 'package:com_app/features/shop/screens/order/order.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
@@ -40,8 +44,8 @@ class NavigationController extends GetxController {
 
   final screens = [
     const HomeScreen(),
-    const Store(),
-    const FavouriteScreen(),
-    const SettingsScreen(),
+    const ComplainScreen(),
+    const ActivityScreen(),
+    const ProfileScreen(),
   ];
 }

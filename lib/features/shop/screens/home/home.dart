@@ -2,6 +2,7 @@
 
 import 'package:com_app/common/widgets/list_tiles/settings_menu_tile.dart';
 import 'package:com_app/features/personalization/screens/address/address.dart';
+import 'package:com_app/features/personalization/screens/complain_form/complain_form.dart';
 import 'package:com_app/features/shop/screens/order/order.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get_core/src/get_main.dart';
@@ -74,9 +75,11 @@ class HomeScreen extends StatelessWidget {
                   ),
                   const SizedBox(height: TSizes.spaceBtwSections),
 
-                  TSectionHeading(
+                  const TSectionHeading(
                     title: 'Popular Complain',
-                    onPressed: () => Get.to(() => const AllProducts()),
+                    showActionButton: false,
+
+                    ///onPressed: () => Get.to(() => const AllProducts()),
                   ),
                   const SizedBox(height: TSizes.spaceBtwItems),
 
@@ -88,12 +91,11 @@ class HomeScreen extends StatelessWidget {
                         'Click here for Fan, light, etc releted compalin. ',
                     //onTap: () {},
                   ),
-                  const TSettingsMenuTile(
+                  TSettingsMenuTile(
                     icon: Iconsax.pen_tool,
                     title: 'Carpenter',
                     subTitle: 'For door, Bed, chair, window releted comaplain',
-
-                    ///onTap: () => Get.to(() => const UserAddressScreen()),
+                    onTap: () => Get.to(() => const ComplainForm()),
                   ),
                   const TSettingsMenuTile(
                     icon: Iconsax.simcard_2,
@@ -110,7 +112,7 @@ class HomeScreen extends StatelessWidget {
                   ),
                   const TSettingsMenuTile(
                     icon: Iconsax.square,
-                    title: 'others',
+                    title: 'Others',
                     subTitle: 'For others complain only',
                     //onTap: () {},
                   ),

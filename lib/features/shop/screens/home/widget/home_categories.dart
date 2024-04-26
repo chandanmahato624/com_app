@@ -27,6 +27,21 @@ class THomeCategories extends StatelessWidget {
             title: 'Department.',
             onTap: () => Get.to(() => const SubcategoriesScreen()),
           ),
+          TVerticalImageText(
+            icon: Iconsax.activity,
+            title: 'Department.',
+            onTap: () => Get.to(() => const SubcategoriesScreen()),
+          ),
+          TVerticalImageText(
+            icon: Iconsax.activity,
+            title: 'Department.',
+            onTap: () => Get.to(() => const SubcategoriesScreen()),
+          ),
+          TVerticalImageText(
+            icon: Iconsax.activity,
+            title: 'Department.',
+            onTap: () => Get.to(() => const SubcategoriesScreen()),
+          ),
         ],
       ),
     );
