@@ -30,19 +30,6 @@ class TImages {
   static const String electronicsIcon =
       "assets/icons/categories/icons8-smartphone-64.png";
 
-  // -- Brand Icons
-  static const String nikeLogo = "assets/icons/brands/nike.png";
-  static const String adidasLogo = "assets/icons/brands/adidas-logo.png";
-  static const String appleLogo = "assets/icons/brands/apple-logo.png";
-  static const String jordanLogo = "assets/icons/brands/jordan-logo.png";
-  static const String pumaLogo = "assets/icons/brands/puma-logo.png";
-  static const String zaraLogo = "assets/icons/brands/zara-logo.png";
-  static const String kenwoodLogo = "assets/icons/brands/kenwood-logo.png";
-  static const String hermanMillerLogo =
-      "assets/icons/brands/herman-miller-logo.png";
-  static const String ikeaLogo = "assets/icons/brands/ikea_logo.png";
-  static const String acerlogo = "assets/icons/brands/acer_logo.png";
-
   // -- Animations
   static const String productsIllustration =
       "assets/images/animations/sammy-line-workout.gif";
@@ -231,13 +218,13 @@ class TImages {
       "assets/images/reviews/review_profile_image_3.jpeg";
 
   //Banners
-  static const String promoBanner1 = "assets/images/banners/nbu-cst.png";
-  static const String promoBanner2 = "assets/images/banners/banner_2.jpg";
-  static const String promoBanner3 = "assets/images/banners/banner_3.jpg";
+  static const String banner1 = "assets/images/banners/cst-dept.png";
+  static const String banner2 = "assets/images/banners/admin-building.png";
+  static const String banner3 = "assets/images/banners/shal-kunja.png";
   static const String promoBanner4 = "assets/images/banners/banner_4.jpg";
-  static const String banner1 = "assets/images/banners/nbu-cst.png";
-  static const String banner2 = "assets/images/banners/banner_2.jpg";
-  static const String banner3 = "assets/images/banners/banner_3.jpg";
+  static const String promoBanner2 = "assets/images/banners/nbu-cst.png";
+  static const String promoBanner3 = "assets/images/banners/banner_2.jpg";
+  static const String promoBanner1 = "assets/images/banners/banner_3.jpg";
   static const String banner4 = "assets/images/banners/banner_4.jpg";
   static const String banner5 = "assets/images/banners/banner_5.jpg";
   static const String banner6 = "assets/images/banners/banner_6.jpg";

@@ -36,12 +36,10 @@ class ComplainScreen extends StatelessWidget {
                               .apply(color: TColors.white))),
 
                   /// User profile card
-                  // TUserProfileTile(
-                  //     onPressed: () => Get.to(() => const ProfileScreen())),
+                  TUserProfileTile(
+                      onPressed: () => Get.to(() => const ProfileScreen())),
                   const SizedBox(height: TSizes.spaceBtwSections),
                 ],
-
-                ///-------6.39 tffin breack
               ),
             ),
 
@@ -55,7 +53,7 @@ class ComplainScreen extends StatelessWidget {
                       title: 'All Complains', showActionButton: false),
                   const SizedBox(height: TSizes.spaceBtwItems),
                   TSettingsMenuTile(
-                    icon: Iconsax.electricity,
+                    icon: Iconsax.building_3,
                     title: 'Electricity',
                     subTitle:
                         'Click here for Fan, light, etc releted compalin. ',

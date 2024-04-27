@@ -85,7 +85,7 @@ class HomeScreen extends StatelessWidget {
 
                   /// Populer complain categories ---
                   const TSettingsMenuTile(
-                    icon: Iconsax.electricity,
+                    icon: Iconsax.building_3,
                     title: 'Electricity',
                     subTitle:
                         'Click here for Fan, light, etc releted compalin. ',
