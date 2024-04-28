@@ -29,9 +29,9 @@ class TUserProfileTile extends StatelessWidget {
               .textTheme
               .bodyMedium!
               .apply(color: TColors.white)),
-      trailing: IconButton(
-          onPressed: onPressed,
-          icon: const Icon(Iconsax.edit, color: TColors.white)),
+      // trailing: IconButton(
+      //     onPressed: onPressed,
+      //     icon: const Icon(Iconsax.edit, color: TColors.white)),
     );
   }
 }

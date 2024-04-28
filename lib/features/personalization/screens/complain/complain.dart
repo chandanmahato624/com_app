@@ -28,12 +28,12 @@ class ComplainScreen extends StatelessWidget {
             TPrimaryHeaderContainer(
               child: Column(
                 children: [
-                  TAppBar(
-                      title: Text('',
-                          style: Theme.of(context)
-                              .textTheme
-                              .headlineMedium!
-                              .apply(color: TColors.white))),
+                  // TAppBar(
+                  //     title: Text('Test',
+                  //         style: Theme.of(context)
+                  //             .textTheme
+                  //             .headlineMedium!
+                  //             .apply(color: TColors.white))),
 
                   /// User profile card
                   TUserProfileTile(
@@ -56,34 +56,36 @@ class ComplainScreen extends StatelessWidget {
                     icon: Iconsax.building_3,
                     title: 'Electricity',
                     subTitle:
-                        'Click here for Fan, light, etc releted compalin. ',
+                        'Click here for Fan, light, etc related complaints and inquiries ',
                     onTap: () => Get.to(() => const ComplainForm()),
                   ),
-                  const TSettingsMenuTile(
+                  TSettingsMenuTile(
                     icon: Iconsax.pen_tool,
                     title: 'Carpenter',
-                    subTitle: 'For door, Bed, chair, window releted comaplain',
-
-                    ///onTap: () => Get.to(() => const UserAddressScreen()),
+                    subTitle:
+                        'For door, Bed, chair, window related complain reporting form',
+                    onTap: () => Get.to(() => const ComplainForm()),
                   ),
-                  const TSettingsMenuTile(
+                  TSettingsMenuTile(
                     icon: Iconsax.simcard_2,
                     title: 'Window Glass',
-                    subTitle: 'Only if window broken.',
-
-                    ///onTap: () => Get.to(const OrderScreen()),
+                    subTitle:
+                        'Press here if your room window is broken or damaged',
+                    onTap: () => Get.to(() => const ComplainForm()),
                   ),
-                  const TSettingsMenuTile(
+                  TSettingsMenuTile(
                     icon: Iconsax.blur,
                     title: 'Plumbing',
-                    subTitle: 'Any type of water releted complain',
-                    //onTap: () {},
+                    subTitle:
+                        'Press here for any type of plumbing service complaints',
+                    onTap: () => Get.to(() => const ComplainForm()),
                   ),
-                  const TSettingsMenuTile(
+                  TSettingsMenuTile(
                     icon: Iconsax.square,
                     title: 'Others',
-                    subTitle: 'For others complain only',
-                    //onTap: () {},
+                    subTitle:
+                        'Press here for other complaints if your complaint category is not found.',
+                    onTap: () => Get.to(() => const ComplainForm()),
                   ),
                   const TSettingsMenuTile(
                     icon: Iconsax.bag_tick,
