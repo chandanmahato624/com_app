@@ -84,37 +84,40 @@ class HomeScreen extends StatelessWidget {
                   const SizedBox(height: TSizes.spaceBtwItems),
 
                   /// Populer complain categories ---
-                  const TSettingsMenuTile(
+                  TSettingsMenuTile(
                     icon: Iconsax.building_3,
                     title: 'Electricity',
                     subTitle:
-                        'Click here for Fan, light, etc releted compalin. ',
-                    //onTap: () {},
+                        'Click here for Fan, light, etc related complaints and inquiries ',
+                    onTap: () => Get.to(() => const ComplainForm()),
                   ),
                   TSettingsMenuTile(
                     icon: Iconsax.pen_tool,
                     title: 'Carpenter',
-                    subTitle: 'For door, Bed, chair, window releted comaplain',
+                    subTitle:
+                        'For door, Bed, chair, window related complain reporting form',
                     onTap: () => Get.to(() => const ComplainForm()),
                   ),
-                  const TSettingsMenuTile(
+                  TSettingsMenuTile(
                     icon: Iconsax.simcard_2,
                     title: 'Window Glass',
-                    subTitle: 'Only if window broken.',
-
-                    ///onTap: () => Get.to(const OrderScreen()),
+                    subTitle:
+                        'Press here if your room window is broken or damaged',
+                    onTap: () => Get.to(() => const ComplainForm()),
                   ),
-                  const TSettingsMenuTile(
+                  TSettingsMenuTile(
                     icon: Iconsax.blur,
                     title: 'Plumbing',
-                    subTitle: 'Any type of water releted complain',
-                    //onTap: () {},
+                    subTitle:
+                        'Press here for any type of plumbing service complaints',
+                    onTap: () => Get.to(() => const ComplainForm()),
                   ),
-                  const TSettingsMenuTile(
+                  TSettingsMenuTile(
                     icon: Iconsax.square,
                     title: 'Others',
-                    subTitle: 'For others complain only',
-                    //onTap: () {},
+                    subTitle:
+                        'Press here for other complaints if your complaint category is not found.',
+                    onTap: () => Get.to(() => const ComplainForm()),
                   ),
 
                   /// Popular product ---
