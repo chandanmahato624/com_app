@@ -28,8 +28,8 @@ class THomeAppBar extends StatelessWidget {
             () => Text(controller.user.value.fullName,
                 style: Theme.of(context)
                     .textTheme
-                    .headlineSmall
-                    ?.apply(color: TColors.white)),
+                    .headlineSmall!
+                    .apply(color: TColors.white)),
           ),
         ],
       ),
