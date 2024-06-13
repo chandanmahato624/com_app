@@ -1,3 +1,4 @@
+import 'package:com_app/features/personalization/screens/profile/widgets/change_name.dart';
 import 'package:flutter/material.dart';
 import 'package:com_app/common/widgets/appbar/appbar.dart';
 import 'package:com_app/common/widgets/images/t_circular_image.dart';
@@ -6,6 +7,8 @@ import 'package:com_app/features/personalization/controllers/user_controller.dar
 import 'package:com_app/features/personalization/screens/profile/widgets/profile_menu.dart';
 import 'package:com_app/utils/constants/image_strings.dart';
 import 'package:com_app/utils/constants/sizes.dart';
+import 'package:get/get_core/src/get_main.dart';
+import 'package:get/get_navigation/get_navigation.dart';
 
 class ProfileScreen extends StatelessWidget {
   const ProfileScreen({super.key});
@@ -47,7 +50,7 @@ class ProfileScreen extends StatelessWidget {
               TProfileMenu(
                   title: 'Name',
                   value: controller.user.value.fullName,
-                  onPressed: () {}),
+                  onPressed: () => Get.to(() => const ChangeName())),
               TProfileMenu(
                   title: 'Username',
                   value: controller.user.value.username,
