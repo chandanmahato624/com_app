@@ -28,12 +28,7 @@ class ComplainScreen extends StatelessWidget {
             TPrimaryHeaderContainer(
               child: Column(
                 children: [
-                  // TAppBar(
-                  //     title: Text('Test',
-                  //         style: Theme.of(context)
-                  //             .textTheme
-                  //             .headlineMedium!
-                  //             .apply(color: TColors.white))),
+                  const TAppBar(title: Text('')),
 
                   /// User profile card
                   TUserProfileTile(
