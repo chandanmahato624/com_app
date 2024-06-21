@@ -1,3 +1,4 @@
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:com_app/utils/formatters/formatter.dart';
 import 'package:flutter/material.dart';
 
@@ -50,5 +51,43 @@ class AddressModel {
       'DateTime': DateTime.now(),
       'SelectedAddress': selectedAdresses,
     };
+  }
+
+  factory AddressModel.fromMap(Map<String, dynamic> data) {
+    return AddressModel(
+      id: data['Id'] as String,
+      name: data['Name'] as String,
+      phoneNumber: data['PhoneNumber'] as String,
+      street: data['Street'] as String,
+      city: data['City'] as String,
+      state: data['State'] as String,
+      postalCode: data['PostalCode'] as String,
+      country: data['Country'] as String,
+      selectedAdresses: data['SelectedAddress'] as bool,
+      dateTime: (data['DateTime'] as Timestamp).toDate(),
+    );
+  }
+
+  // Factory constructor to create an addressModel from a documentsnapshot---
+  factory AddressModel.fromDocumentSnapshot(DocumentSnapshot snapshot) {
+    final data = snapshot.data() as Map<String, dynamic>;
+
+    return AddressModel(
+      id: snapshot.id,
+      name: data['Nmae'] ?? '',
+      phoneNumber: data['PhoneNumber'] ?? '',
+      street: data['Street'] ?? '',
+      city: data['City'] ?? '',
+      state: data['State'] ?? '',
+      postalCode: data['PostalCode'] ?? '',
+      country: data['Country'] ?? '',
+      dateTime: (data['DateTime'] as Timestamp).toDate(),
+      selectedAdresses: data['SelectedAdress'] as bool,
+    );
+  }
+
+  @override
+  String toString() {
+    return '$street, $city, $state $postalCode, $country';
   }
 }

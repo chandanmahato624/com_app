@@ -62,6 +62,10 @@ class TTexts {
   static const String yourAccountCreatedSubTitle =
       "Welcome to Your Ultimate Shopping Destination: Your Account is Created, Unleash the Joy of Seamless Online Shopping!";
 
+  static const String yourComplainCreatedTitle =
+      "Your complaint has been successfully registered.";
+  static const String yourComplainCreatedSubTitle =
+      "We received your complaint and will contact you soon to resolve your problem.";
   // -- Product
   static const String popularProducts = "Popular Products";
 
