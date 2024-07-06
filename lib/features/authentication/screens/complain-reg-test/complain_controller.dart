@@ -71,7 +71,8 @@ class ComplainController extends GetxController {
       // show sucess message
       Tloaders.successSnackBar(
           title: 'congertulation',
-          message: 'Your account has been created! verify email to continew.');
+          message:
+              'Your compalind has been registerd! continew to home screen.');
 
       // Move to verify Email Screen
       Get.to(
